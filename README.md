@@ -43,7 +43,7 @@ proyecto-componente/
 
 ## 3. Instalación (Cómo implementarlo a un proyecto HTML)
 
-Para que otra persona pueda usar el componente en su página, solo debe copiar las carpetas y agregar estas dos conexiones en su archivo HTML:
+Para que otro programador pueda usar el componente en su página, solo debe copiar las carpetas y agregar estas dos conexiones en su archivo HTML:
 
 1. Agregar los estilos del cronómetro en el `<head>`:
 

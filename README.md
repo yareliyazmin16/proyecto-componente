@@ -4,7 +4,6 @@
 * **Instituto:** Instituto Tecnológico de Oaxaca
 * **Carrera:** Ingeniería en Sistemas Computacionales
 * **Nombre de la Alumna:** Yareli Yazmin Pacheco Aragón
-* **Semestre:** Sexto Semestre
 * **Grupo:** 7SC
 * **Materia:** Programación Web
 
@@ -132,13 +131,13 @@ iniciarCronometro('bottom-right', 5);
 ## 5. Capturas de Pantalla de mi Proyecto
 
 * **Cronómetro corriendo normal:**
-`![Cronómetro Activo](foto_activo.png)`
+![alt text](image.png)
 *Aquí se ve cómo el reloj empieza en 00:00 y va cambiando los números segundo a segundo en color verde en la esquina.*
 * **Cronómetro cuando lo pauso:**
-`![Cronómetro Pausado](foto_pausa.png)`
+![alt text](image-1.png)
 *Al darle clic al botón, el tiempo se detiene, el texto cambia a "Reanudar" y todo se pone en amarillo.*
 * **Cuando se cumple el tiempo y sale el aviso:**
-`![Ventana de Aviso](foto_alerta.png)`
+![alt text](image-2.png)
 *Al llegar al minuto que configuré, el reloj se pone en rojo y salta la ventana modal gris en medio de la pantalla.*
 
 ---

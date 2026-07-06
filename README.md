@@ -137,15 +137,19 @@ iniciarCronometro('bottom-right', 5);
 ## 5. Capturas de Pantalla de mi Proyecto
 
 * **Estado de Espera (Usuario Activo):**
+![alt text](image-5.png)
 Mientras el usuario mueva el mouse, dé clics o presione teclas, el componente se mantiene invisible y en ceros. No interfiere visualmente con el flujo de la aplicación.
 * **Detección de Inactividad (Panel Activo):**
-
 *Si la pantalla se deja sola por más de 5 segundos, el panel se vuelve visible automáticamente en la esquina configurada y empieza a contar el tiempo acumulado de inactividad en color verde.*
 * **Reinicio Dinámico:**
 *Si el usuario regresa a la computadora y realiza cualquier movimiento antes del límite, el panel desaparece de inmediato de la interfaz y el temporizador vuelve a `00:00` de forma reactiva.*
 * **Límite Excedido y Bloqueo de Seguridad:**
-
-*Al cumplirse los minutos indicados por parámetro, el reloj cambia a rojo y se activa la ventana modal `#mensajeaviso` inhabilitando la navegación. Si no se presiona "Seguir aquí" en un lapso de 10 segundos, la página web se refrescará de forma automática.*
+![alt text](image-6.png)
+*Al cumplirse los minutos indicados por parámetro, el reloj cambia a rojo y se activa la ventana modal `#mensajeaviso` inhabilitando la navegación. *
+![alt text](image-7.png)
+* Si no se presiona "Seguir aquí" en un lapso de 10 segundos, la página web se refrescará de forma automática.*
+* Pero si presionas "Seguir aquí" te regresa a la página como la dejaste 
+![alt text](image-8.png)
 
 ---
 

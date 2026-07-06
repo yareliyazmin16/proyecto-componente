@@ -28,6 +28,19 @@ Esto sirve para muchas cosas en la vida real, por ejemplo:
 ## 2. Cómo están organizados los archivos (Estructura)
 
 
+```
+proyecto-componente/
+├── css/
+│   ├── componente.css   # Solo los estilos del cronómetro y de la ventana de aviso 
+│   └── pagina.css       # Los estilos normales de fondo y cajas del ejemplo
+├── js/
+│   └── componente.js    # La lógica de los segundos, minutos y botones en JavaScript
+└── index.html           # La página principal donde pruebo el componente
+
+```
+
+
+
 ## 3. Instalación (Cómo implementarlo a un proyecto HTML)
 
 Para que otra persona pueda usar el componente en su página, solo debe copiar las carpetas y agregar estas dos conexiones en su archivo HTML:

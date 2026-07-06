@@ -11,7 +11,7 @@
 
 ## 1. Nombre de mi Componente y Qué Problema Resuelve
 
-### **Nombre:** Sensor de Inactividad Automático con Ventana de Aviso (Modal)
+### **Nombre:** Sensor de Inactividad Automático con Ventana de Aviso 
 
 Este proyecto es un componente visual interactivo y reutilizable diseñado para **monitorear en tiempo real el tiempo de inactividad de un usuario dentro de cualquier página web**.
 

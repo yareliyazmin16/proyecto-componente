@@ -1,19 +1,20 @@
+# Actividad: Librería de Componentes Visuales - Cronómetro con Ventana de Aviso
 
+### **Información del Estudiante**
+* **Instituto:** Instituto Tecnológico de Oaxaca
+* **Carrera:** Ingeniería en Sistemas Computacionales
+* **Nombre de la Alumna:** Yareli Yazmin Pacheco Aragón
+* **Semestre:** Sexto Semestre
+* **Grupo:** 7SC
+* **Materia:** Programación Web
 
-```markdown
-## Actividad: Librería de Componentes Visuales - Cronómetro con Ventana de Aviso
-**Instituto Tecnológico de Oaxaca
-** Ingeniería en Sistemas Computacionales 
-**Nombre de la Alumna:** Yareli Yazmin Pacheco Aragón
-**Semestre:** Sexto Semestre
-** Grupo: 7SC 
-**Materia:** Programación Web
+---
 
+## 1. Nombre de mi Componente y Qué Problema Resuelve
 
+### **Nombre:** Cronómetro de Sesión Activa con Ventana de Aviso (Modal)
 
-
-## **Nombre:** Cronómetro de Sesión Activa con Ventana de Aviso (Modal)
-Este proyecto es un componente visual interactivo y reutilizable diseñado para controlar y mostrar en pantalla cuánto tiempo lleva un usuario dentro de cualquier página web.
+Este proyecto es un componente visual interactivo y reutilizable diseñado para **controlar y mostrar en pantalla cuánto tiempo lleva un usuario dentro de cualquier página web**.
 
 A diferencia de las funciones que solo calculan datos por detrás, este componente se puede ver y usar directamente en la interfaz. El problema principal que resuelve es el aviso de inactividad o límites de tiempo. Al pasar ciertos minutos, el componente cambia de color y bloquea la pantalla con una ventana gris que le avisa al usuario que ya pasó su tiempo límite. 
 
@@ -22,22 +23,9 @@ Esto sirve para muchas cosas en la vida real, por ejemplo:
 * **Tiendas en línea:** Para decirte que tus productos guardados en el carrito van a expirar.
 * **Plataformas de exámenes o tareas:** Para que el alumno vea cuántos minutos le quedan y no se le cierre la página por sorpresa.
 
+---
 
-## 2. Cómo están organizados los  archivos (Estructura)
-
-
-
-```text
-proyecto-componente/
-├── css/
-│   ├── componente.css   # Solo los estilos del cronómetro y de la ventana de aviso 
-│   └── pagina.css       # Los estilos normales de fondo y cajas del ejemplo
-├── js/
-│   └── componente.js    # La lógica de los segundos, minutos y botones en JavaScript
-└── index.html           # La página principal donde pruebo el componente
-
-```
-
+## 2. Cómo están organizados los archivos (Estructura)
 
 
 ## 3. Instalación (Cómo implementarlo a un proyecto HTML)

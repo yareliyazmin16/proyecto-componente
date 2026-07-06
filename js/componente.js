@@ -7,7 +7,7 @@ function iniciarCronometro(posicion = 'bottom-right', tiempoAlertaMinutos = 5) {
 
     panel.innerHTML = `
         <div class="crono-encabezado">
-            <span class="crono-titulo">Inactividad Detected</span> 
+            <span class="crono-titulo">Inactividad Detectada</span> 
         </div>
         <div id="temporizador">00:00</div>
     `;

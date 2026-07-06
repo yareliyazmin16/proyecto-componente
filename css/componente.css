@@ -24,31 +24,13 @@
     font-size: 32px;
     font-weight: bold;
     color: #2ecc71;
-    margin-bottom: 10px;
-}
-
-#botonpausa {
-    background-color: #e74c3c;
-    color: white;
-    border: none;
-    padding: 8px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-weight: bold;
-    width: 100%;
+    margin-bottom: 5px; 
 }
 
 .top-right    { top: 20px; right: 20px; }
 .top-left     { top: 20px; left: 20px; }
 .bottom-right { bottom: 20px; right: 20px; }
 .bottom-left  { bottom: 20px; left: 20px; }
-
-#panel-cronometro.pausado {
-    border-color: #f1c40f;
-}
-#panel-cronometro.pausado #temporizador {
-    color: #f1c40f;
-}
 
 #panel-cronometro.alerta-limite {
     border-color: #e74c3c;

@@ -1,4 +1,7 @@
-# Actividad: Librería de Componentes Visuales - Cronómetro con Ventana de Aviso
+
+
+```
+# Actividad: Librería de Componentes Visuales - Sensor de Inactividad con Ventana de Aviso
 
 ### **Información del Estudiante**
 * **Instituto:** Instituto Tecnológico de Oaxaca
@@ -11,47 +14,50 @@
 
 ## 1. Nombre de mi Componente y Qué Problema Resuelve
 
-### **Nombre:** Cronómetro de Sesión Activa con Ventana de Aviso (Modal)
+### **Nombre:** Sensor de Inactividad Automático con Ventana de Aviso (Modal)
 
-Este proyecto es un componente visual interactivo y reutilizable diseñado para **controlar y mostrar en pantalla cuánto tiempo lleva un usuario dentro de cualquier página web**.
+Este proyecto es un componente visual interactivo y reutilizable diseñado para **monitorear en tiempo real el tiempo de inactividad de un usuario dentro de cualquier página web**.
 
-A diferencia de las funciones que solo calculan datos por detrás, este componente se puede ver y usar directamente en la interfaz. El problema principal que resuelve es el aviso de inactividad o límites de tiempo. Al pasar ciertos minutos, el componente cambia de color y bloquea la pantalla con una ventana gris que le avisa al usuario que ya pasó su tiempo límite. 
+A diferencia de las funciones simples que solo procesan datos de manera oculta, este componente trabaja directamente en el DOM mediante escuchadores de eventos. Mientras el usuario está interactuando activamente con la página, el componente permanece oculto y el contador se mantiene en ceros de forma automática.
 
-Esto sirve para muchas cosas en la vida real, por ejemplo:
-* **Páginas de bancos:** Para avisar que se va a cerrar tu cuenta si la dejas abierta.
-* **Tiendas en línea:** Para decirte que tus productos guardados en el carrito van a expirar.
-* **Plataformas de exámenes o tareas:** Para que el alumno vea cuántos minutos le quedan y no se le cierre la página por sorpresa.
+Si el usuario deja la computadora sola por más de 5 segundos, el panel se vuelve visible en la esquina seleccionada y comienza a contar el tiempo. Al cumplirse el tiempo límite configurado por el desarrollador, el componente cambia a color rojo y bloquea la pantalla con una ventana  que le avisa que su sesión está en riesgo. Si el aviso no es respondido en 10 segundos, la página se reinicia automáticamente para proteger la información.
+
+Esto resuelve problemas críticos en la vida real, por ejemplo:
+* **Banca en línea:** Cerrar de forma segura una sesión bancaria si el usuario dejó su computadora desatendida en un lugar público.
+* **Plataformas de comercio:** Liberar productos reservados en un carrito de compras si el cliente abandona el proceso.
+* **Seguridad de datos:** Prevenir accesos no autorizados en plataformas corporativas o escolares por inactividad.
 
 ---
 
 ## 2. Cómo están organizados los archivos (Estructura)
 
+El diseño base de la aplicación de prueba se encuentra completamente separado de los estilos específicos de nuestra librería:
 
-```
+```text
 proyecto-componente/
 ├── css/
-│   ├── componente.css   # Solo los estilos del cronómetro y de la ventana de aviso 
+│   ├── componente.css   # Solo los estilos del cronómetro y de la ventana de aviso
 │   └── pagina.css       # Los estilos normales de fondo y cajas del ejemplo
 ├── js/
-│   └── componente.js    # La lógica de los segundos, minutos y botones en JavaScript
-└── index.html           # La página principal donde pruebo el componente
+│   └── componente.js    # Lógica del sensor, contador y eventos de inactividad
+└── index.html           # Página principal de simulación que consume la librería
 
 ```
 
-
+---
 
 ## 3. Instalación (Cómo implementarlo a un proyecto HTML)
 
-Para que otro programador pueda usar el componente en su página, solo debe copiar las carpetas y agregar estas dos conexiones en su archivo HTML:
+Para integrar este componente en cualquier página web, solo se deben incluir las siguientes llamadas dentro del archivo HTML:
 
-1. Agregar los estilos del cronómetro en el `<head>`:
+1. Agregar los estilos de la librería dentro del `<head>`:
 
 ```html
 <link rel="stylesheet" href="css/componente.css">
 
 ```
 
-2. Agregar el script de JavaScript al final de su `<body>`:
+2. Agregar el archivo de lógica en JavaScript justo antes del cierre del `</body>`:
 
 ```html
 <script src="js/componente.js"></script>
@@ -62,7 +68,7 @@ Para que otro programador pueda usar el componente en su página, solo debe copi
 
 ## 4. Uso y Ejemplos de Código Real
 
-El componente es totalmente reutilizable porque no tiene datos fijos. Cuando lo mandas a llamar en el script de una página, el programador elige en los parametros en qué esquina de la pantalla ponerlo y a los cuántos minutos quieres que salga el aviso de tiempo:
+El componente es completamente reutilizable y paramétrico. Al inicializarlo desde el script, se configuran dos variables clave: la ubicación espacial del panel y el límite de tolerancia de inactividad expresado en minutos.
 
 ```javascript
 // Estructura: iniciarCronometro('esquina', minutos);
@@ -70,7 +76,7 @@ iniciarCronometro('bottom-right', 5);
 
 ```
 
-### Ejemplo 1: Ponerlo en una Tienda Online (Arriba a la derecha a los 15 minutos)
+### Ejemplo 1: Implementación en una Tienda Online (Arriba a la derecha a los 15 minutos)
 
 ```html
 <!DOCTYPE html>
@@ -85,12 +91,12 @@ iniciarCronometro('bottom-right', 5);
 
     <div class="container">
         <h1>Tu Carrito de Compras</h1>
-        <p>Paga tus productos antes de que se agote tu tiempo reservado.</p>
+        <p>Por favor, completa tu pago. Tus artículos están reservados temporalmente.</p>
     </div>
 
     <script src="js/componente.js"></script>
     <script>
-        // Lo ponemos arriba a la derecha y que avise a los 15 minutos
+        // Monitorea inactividad y despliega el aviso a los 15 minutos arriba a la derecha
         iniciarCronometro('top-right', 15);
     </script>
 </body>
@@ -98,7 +104,7 @@ iniciarCronometro('bottom-right', 5);
 
 ```
 
-### Ejemplo 2: Ponerlo en una Banca (Abajo a la izquierda a los 3 minutos)
+### Ejemplo 2: Implementación en una Banca Electrónica (Abajo a la izquierda a los 3 minutos)
 
 ```html
 <!DOCTYPE html>
@@ -113,12 +119,12 @@ iniciarCronometro('bottom-right', 5);
 
     <div class="container">
         <h1>Banca en Línea</h1>
-        <p>Por tu seguridad estamos midiendo tu tiempo en la página.</p>
+        <p>Mantenemos un entorno seguro monitoreando tu sesión.</p>
     </div>
 
     <script src="js/componente.js"></script>
     <script>
-        // Lo ponemos abajo a la izquierda y que avise rápido a los 3 minutos
+        // Alerta de seguridad rápida a los 3 minutos de inactividad abajo a la izquierda
         iniciarCronometro('bottom-left', 3);
     </script>
 </body>
@@ -130,19 +136,20 @@ iniciarCronometro('bottom-right', 5);
 
 ## 5. Capturas de Pantalla de mi Proyecto
 
-* **Cronómetro corriendo normal:**
-![alt text](image.png)
-*Aquí se ve cómo el reloj empieza en 00:00 y va cambiando los números segundo a segundo en color verde en la esquina.*
-* **Cronómetro cuando lo pauso:**
-![alt text](image-1.png)
-*Al darle clic al botón, el tiempo se detiene, el texto cambia a "Reanudar" y todo se pone en amarillo.*
-* **Cuando se cumple el tiempo y sale el aviso:**
-![alt text](image-2.png)
-*Al llegar al minuto que configuré, el reloj se pone en rojo y salta la ventana de aviso en gris en medio de la pantalla.*
+* **Estado de Espera (Usuario Activo):**
+Mientras el usuario mueva el mouse, dé clics o presione teclas, el componente se mantiene invisible y en ceros. No interfiere visualmente con el flujo de la aplicación.
+* **Detección de Inactividad (Panel Activo):**
+
+*Si la pantalla se deja sola por más de 5 segundos, el panel se vuelve visible automáticamente en la esquina configurada y empieza a contar el tiempo acumulado de inactividad en color verde.*
+* **Reinicio Dinámico:**
+*Si el usuario regresa a la computadora y realiza cualquier movimiento antes del límite, el panel desaparece de inmediato de la interfaz y el temporizador vuelve a `00:00` de forma reactiva.*
+* **Límite Excedido y Bloqueo de Seguridad:**
+
+*Al cumplirse los minutos indicados por parámetro, el reloj cambia a rojo y se activa la ventana modal `#mensajeaviso` inhabilitando la navegación. Si no se presiona "Seguir aquí" en un lapso de 10 segundos, la página web se refrescará de forma automática.*
 
 ---
 
-## 6. Link del video 
 
 
+## 6. Video Demostrativo 
 

@@ -1,5 +1,3 @@
-
-
 # Actividad: Librería de Componentes Visuales - Sensor de Inactividad con Ventana de Aviso
 
 ### **Información del Estudiante**

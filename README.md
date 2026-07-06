@@ -1,6 +1,5 @@
 
 
-```
 # Actividad: Librería de Componentes Visuales - Sensor de Inactividad con Ventana de Aviso
 
 ### **Información del Estudiante**
@@ -20,7 +19,7 @@ Este proyecto es un componente visual interactivo y reutilizable diseñado para 
 
 A diferencia de las funciones simples que solo procesan datos de manera oculta, este componente trabaja directamente en el DOM mediante escuchadores de eventos. Mientras el usuario está interactuando activamente con la página, el componente permanece oculto y el contador se mantiene en ceros de forma automática.
 
-Si el usuario deja la computadora sola por más de 5 segundos, el panel se vuelve visible en la esquina seleccionada y comienza a contar el tiempo. Al cumplirse el tiempo límite configurado por el desarrollador, el componente cambia a color rojo y bloquea la pantalla con una ventana  que le avisa que su sesión está en riesgo. Si el aviso no es respondido en 10 segundos, la página se reinicia automáticamente para proteger la información.
+Si el usuario deja la computadora sola por más de 5 segundos, el panel se vuelve visible en la esquina seleccionada y comienza a contar el tiempo. Al cumplirse el tiempo límite configurado por el desarrollador, el componente cambia a color rojo y bloquea la pantalla con una ventana que le avisa que su sesión está en riesgo. Si el aviso no es respondido en 10 segundos, la página se reinicia automáticamente para proteger la información.
 
 Esto resuelve problemas críticos en la vida real, por ejemplo:
 * **Banca en línea:** Cerrar de forma segura una sesión bancaria si el usuario dejó su computadora desatendida en un lugar público.
@@ -30,10 +29,7 @@ Esto resuelve problemas críticos en la vida real, por ejemplo:
 ---
 
 ## 2. Cómo están organizados los archivos (Estructura)
-
-El diseño base de la aplicación de prueba se encuentra completamente separado de los estilos específicos de nuestra librería:
-
-```text
+```
 proyecto-componente/
 ├── css/
 │   ├── componente.css   # Solo los estilos del cronómetro y de la ventana de aviso

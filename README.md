@@ -1,13 +1,13 @@
 
 
 ```markdown
-# Actividad: Librería de Componentes Visuales - Cronómetro con Ventana de Aviso
-* **Instituto Tecnológico de Oaxaca
-* ** Ingeniería en Sistemas Computacionales 
-* **Nombre de la Alumna:** Yareli Yazmin Pacheco Aragón
-* **Semestre:** Sexto Semestre
-* ** Grupo: 7SC 
-* **Materia:** Programación Web
+Actividad: Librería de Componentes Visuales - Cronómetro con Ventana de Aviso
+**Instituto Tecnológico de Oaxaca
+** Ingeniería en Sistemas Computacionales 
+**Nombre de la Alumna:** Yareli Yazmin Pacheco Aragón
+**Semestre:** Sexto Semestre
+** Grupo: 7SC 
+**Materia:** Programación Web
 
 
 

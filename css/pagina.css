@@ -1,0 +1,19 @@
+body {
+    background-color: #12121a;
+    color: white;
+    font-family: Arial, sans-serif;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+}
+.container {
+    max-width: 600px;
+    text-align: center;
+    border: 1px solid #222;
+    padding: 30px;
+    border-radius: 12px;
+    background: #191924;
+}

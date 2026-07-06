@@ -1,0 +1,103 @@
+#panel-cronometro {
+    position: fixed;
+    background-color: #222222;
+    color: #ffffff;
+    border: 2px solid #3498db;
+    padding: 15px;
+    border-radius: 10px;
+    width: 180px;
+    text-align: center;
+    z-index: 9999;
+}
+
+.crono-encabezado {
+    margin-bottom: 8px;
+}
+
+.crono-titulo {
+    font-size: 12px;
+    color: #aaaaaa;
+    font-weight: bold;
+}
+
+#temporizador {
+    font-size: 32px;
+    font-weight: bold;
+    color: #2ecc71;
+    margin-bottom: 10px;
+}
+
+#botonpausa {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 8px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 100%;
+}
+
+.top-right    { top: 20px; right: 20px; }
+.top-left     { top: 20px; left: 20px; }
+.bottom-right { bottom: 20px; right: 20px; }
+.bottom-left  { bottom: 20px; left: 20px; }
+
+#panel-cronometro.pausado {
+    border-color: #f1c40f;
+}
+#panel-cronometro.pausado #temporizador {
+    color: #f1c40f;
+}
+
+#panel-cronometro.alerta-limite {
+    border-color: #e74c3c;
+    background-color: #3a1a1a;
+}
+#panel-cronometro.alerta-limite #temporizador {
+    color: #e74c3c;
+}
+
+#mensajeaviso {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 10000;
+}
+
+#mensajeaviso.mostrar-modal {
+    display: flex;
+}
+
+.crono-cuadro-mensaje {
+    background-color: #333333;
+    color: white;
+    padding: 30px;
+    border-radius: 10px;
+    width: 350px;
+    text-align: center;
+    border: 1px solid #555555;
+}
+
+.crono-cuadro-mensaje h3 {
+    margin-top: 0;
+    color: #f1c40f;
+}
+
+#cerraraviso {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+    width: 100%;
+}

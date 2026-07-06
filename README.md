@@ -1,7 +1,7 @@
 
 
 ```markdown
-Actividad: Librería de Componentes Visuales - Cronómetro con Ventana de Aviso
+## Actividad: Librería de Componentes Visuales - Cronómetro con Ventana de Aviso
 **Instituto Tecnológico de Oaxaca
 ** Ingeniería en Sistemas Computacionales 
 **Nombre de la Alumna:** Yareli Yazmin Pacheco Aragón
@@ -12,7 +12,7 @@ Actividad: Librería de Componentes Visuales - Cronómetro con Ventana de Aviso
 
 
 
-### **Nombre:** Cronómetro de Sesión Activa con Ventana de Aviso (Modal)
+## **Nombre:** Cronómetro de Sesión Activa con Ventana de Aviso (Modal)
 Este proyecto es un componente visual interactivo y reutilizable diseñado para controlar y mostrar en pantalla cuánto tiempo lleva un usuario dentro de cualquier página web.
 
 A diferencia de las funciones que solo calculan datos por detrás, este componente se puede ver y usar directamente en la interfaz. El problema principal que resuelve es el aviso de inactividad o límites de tiempo. Al pasar ciertos minutos, el componente cambia de color y bloquea la pantalla con una ventana gris que le avisa al usuario que ya pasó su tiempo límite. 

@@ -10,11 +10,14 @@
 <body>
 
     <div class="container">
-        <h1>Mi Página Escolar</h1>
-        <p>El examén cuenta con un contador de tiempo para que puedas visualizarlo de manera inmediata. </p>
-        <p>En la esquina inferior derecha está el contador en tiempo real</p>
+    <h1>Mi Página Escolar</h1>
+    
+    
+    <div class="caja-nombre">
+        <label for="nombreUsuario">Ingresa tu nombre para el examen:</label>
+        <input type="text" id="nombreUsuario" placeholder="Escribe tu nombre aquí...">
     </div>
-
+</div>
     <script src="js/componente.js"></script>
     <script>
         iniciarCronometro('bottom-right', 1);

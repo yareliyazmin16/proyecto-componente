@@ -138,7 +138,7 @@ iniciarCronometro('bottom-right', 5);
 *Al darle clic al botón, el tiempo se detiene, el texto cambia a "Reanudar" y todo se pone en amarillo.*
 * **Cuando se cumple el tiempo y sale el aviso:**
 ![alt text](image-2.png)
-*Al llegar al minuto que configuré, el reloj se pone en rojo y salta la ventana modal gris en medio de la pantalla.*
+*Al llegar al minuto que configuré, el reloj se pone en rojo y salta la ventana de aviso en gris en medio de la pantalla.*
 
 ---
 

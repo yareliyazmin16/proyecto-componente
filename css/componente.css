@@ -20,6 +20,8 @@
     font-weight: bold;
 }
 
+
+
 #temporizador {
     font-size: 32px;
     font-weight: bold;
@@ -29,8 +31,11 @@
 
 .top-right    { top: 20px; right: 20px; }
 .top-left     { top: 20px; left: 20px; }
+
 .bottom-right { bottom: 20px; right: 20px; }
 .bottom-left  { bottom: 20px; left: 20px; }
+
+
 
 #panel-cronometro.alerta-limite {
     border-color: #e74c3c;
@@ -39,6 +44,8 @@
 #panel-cronometro.alerta-limite #temporizador {
     color: #e74c3c;
 }
+
+
 
 #mensajeaviso {
     position: fixed;
@@ -56,6 +63,9 @@
 #mensajeaviso.mostrar-modal {
     display: flex;
 }
+
+
+
 
 .crono-cuadro-mensaje {
     background-color: #333333;
